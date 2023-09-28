@@ -24,7 +24,7 @@ contract MerkleDistribution {
     require(node == root, 'Invalid merkle root.');
     // Send tokens
     claimed[msg.sender] = true;
-    token.transfer(address(this), amount);
+    token.transfer(msg.sender, amount);
     emit Claim(msg.sender, amount);
   }
 }
