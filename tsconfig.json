@@ -17,7 +17,7 @@
   "include": ["index.ts", "src", "abi"],
   "exclude": ["node_modules", "dist"],
   "typedocOptions": {
-    "entryPoints": ["./src/index.ts"],
+    "entryPoints": ["./index.ts"],
     "out": "docs"
   }
 }
